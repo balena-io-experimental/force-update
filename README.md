@@ -4,10 +4,10 @@ Attempt to reproduce the environment where Supervisor 12.3.0 was observed to fai
 
 ## Usage
 ```bash
-git clone 
+git clone git@github.com:balena-io-playground/force-update.git
 cd force-update
 # Assumes the presence of a force-update fleet for testing.
-# We push twice so that the reproduction has 2 releases to switching between when pinning.
+# We push twice so that the reproduction has 2 releases to switch between when pinning.
 balena push force-update
 balena push force-update
 ```
