@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  pin-release:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: 'no'
+    labels:
+      io.balena.features.balena-api: '1'
+      io.balena.features.supervisor-api: '1'
